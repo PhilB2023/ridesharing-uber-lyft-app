@@ -24,7 +24,7 @@ android {
             resValue(
                 "string",
                 "google_maps_key",
-                gradleLocalProperties(rootDir).getProperty("apiKey")
+                gradleLocalProperties(rootDir, providers).getProperty("apiKey")
             )
         }
         release {
